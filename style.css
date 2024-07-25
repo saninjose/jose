@@ -1,0 +1,242 @@
+*{ /* la estrella es un atributo
+	override cualquier cosa en el documento.
+	lo que esté referenciado a esta estrella será
+	a todos los elementos del html.*/
+	box-sizing: border-box;
+}
+
+
+/* links*/
+
+a{
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+	color:lightblue;
+  /*background-color: yellow;*/
+  text-decoration-line: line-through;
+  filter: grayscale(100%);
+}
+
+a:active {color: whitesmoke;}
+
+h2 {
+	font-size: 16px;}
+
+h3 {
+  font-size: 36px;}
+
+p {margin: 10px;}
+
+
+/* cuerpo*/
+
+body {
+	overscroll-behavior-y: none;
+	font-size: 12pt;
+	overflow: auto;
+	text-align: left;
+	font-family: IBM Plex Mono, sans-serif;
+	font-style: normal;
+	/*background-image: url("MIR-telaraña.jpg");*/
+ background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: whitesmoke;
+color: black;
+line-height: 1.5;
+cursor: pointer;
+}
+
+.enlace1{
+	position: fixed;
+	z-index: 99;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 15%;
+	margin-left: 13%;
+}
+
+.enlace2{
+	position: fixed;
+	z-index: 99;
+	text-align: left;
+	font-weight: bold;
+	margin-left: 43%;
+	margin-top: 10%;
+}
+
+.enlace3{
+	position: fixed;
+	z-index: 99;
+	text-align: left;
+	font-weight: bold;
+	margin-left: 79%;
+	margin-top: 38%;
+}
+
+.container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  0.5fr 1fr 1fr;
+  grid-template-areas:
+                       "headerizq headerizq headerizq headerder headerder headerder"
+                       "main main main main main main"
+                       "contenido1 contenido1 contenido2 contenido2 contenido3 contenido3";
+                    
+  grid-gap: .5rem;
+
+}
+
+header{
+  background-color: white;
+  grid-area: header
+
+}
+
+
+#headizq{
+
+  background-color: transparent;
+  grid-area: headerizq;
+}
+
+#headder{
+  background-color: transparent;
+  text-align: right;
+  grid-area: headerder;
+
+}
+
+main{
+  color: black;
+  background-color: transparent;
+  grid-area: main;
+}
+
+#contenido1{
+  background-color: transparent;
+  grid-area: contenido1;}
+#contenido2{
+  background-color: transparent;
+  grid-area: contenido2;}
+#contenido3{
+  background-color: transparent;
+  grid-area: contenido3;}
+
+
+#pataizq{
+  background-color: transparent;
+  grid-area: pataizq;
+text-align: center;}
+
+ #patader{
+  background-color: transparent;
+  grid-area: patader;
+  text-align: center;}
+
+
+
+@media (max-width: 800px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+                         "headerizq headerder"
+                         "main main"
+                         "contenido1 contenido1"
+                         "contenido2 contenido2"
+                         "contenido3 contenido3";
+  }
+
+  body {
+		overscroll-behavior-y: none;
+  font-size: 10pt;
+  overflow: auto;
+  text-align: left;
+  font-family: IBM Plex Mono, sans-serif;
+  font-style: normal;
+  /*background-image: url("MIR-telaraña.jpg");*/
+ background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: whitesmoke;
+color: black;
+}
+
+#contenido1{
+  background-color: transparent;
+	margin-top: 5%;
+	margin-bottom: auto;
+	text-align: left;
+  grid-area: contenido1;}
+#contenido2{
+  background-color: transparent;
+	margin-top: 0;
+	text-align: left;
+  grid-area: contenido2;}
+#contenido3{
+	text-align: left;
+  background-color: transparent;
+  grid-area: contenido3;}
+
+.enlace1{
+	position: fixed;
+	z-index: 99;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 25%;
+	margin-left: 7%;
+}
+
+.enlace2{
+	position: fixed;
+	z-index: 99;
+	text-align: left;
+	font-weight: bold;
+	margin-left: 70%;
+	margin-top: 20%;
+}
+
+.enlace3{
+	position: fixed;
+	z-index: 99;
+	text-align: left;
+	font-weight: bold;
+	margin-left: 73%;
+	margin-top: 50%;
+}
+
+@media (max-width: 350px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+                         "headerizq"
+                         "headerder"
+                         "main"
+                         "contenido1"
+                         "contenido2"
+                         "contenido3"
+                         "pataizq"
+                         "patader";
+  }
+
+#headizq{
+
+  background-color: #352104;
+  grid-area: headerizq;
+  text-align: center;
+}
+
+#headder{
+  background-color: #333fe3;
+  text-align: center;
+  grid-area: headerder;
+
+}
+
+}

@@ -1,0 +1,404 @@
+*{ /* la estrella es un atributo
+	override cualquier cosa en el documento.
+	lo que esté referenciado a esta estrella será
+	a todos los elementos del html.*/
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 1080 px;
+  margin: auto;
+  display: block;
+}
+
+.contenedorvideo{
+	max-width: 1080px;
+	display: block;
+	margin: auto;
+}
+
+.contenedoraudio{
+	max-width: 1080px;
+	display: block;
+	margin: auto;
+}
+
+video {
+  width: 100%;
+	margin: auto;
+	display: block;
+}
+
+.iframe-container{
+  position: relative;
+  left: 50%;
+transform: translateX(-50%);
+  max-width: 1080px;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+ top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+
+@media only screen
+  and (max-width: 374px) {
+    video {
+      display: none;
+    }
+}
+
+/* links*/
+
+a{
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+	color:lightblue;
+  /*background-color: yellow;*/
+  text-decoration-line: line-through;
+}
+
+a:active {
+  color: whitesmoke;}
+
+#rastrerovolador a {text-decoration: none}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {margin: 10px;
+}
+
+/* barra de audio*/
+
+.barraudio {
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: none;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* fin barra de audio*/
+
+/* cuerpo*/
+
+body {
+	font-size: 12pt;
+	overflow: auto;
+	text-align: justify;
+  line-height: 1.5;
+	font-family: IBM Plex Mono, sans-serif;
+	font-style: normal;
+	/*background-image: url("MIR-telaraña.jpg");*/
+ background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: white;
+
+}
+
+
+
+#headervolador{
+  color: midnightblue;
+  text-align: right;
+  font-weight: bold;
+  width: 99%;
+  position: fixed;
+}
+
+#rastrerovolador{
+text-align: right;
+font-weight: lighter;
+font-size: 2.5em;
+color: red;
+width: 99%;
+position: fixed;
+margin-bottom: 25px;
+padding-right: 1%;
+top: 94%;
+z-index: 0;
+}
+
+#rastrerovolador2{color: midnightblue;
+text-align: left;
+font-weight: bold;
+width: 90%;
+position: fixed;
+margin-bottom: 25px;
+top: 95%;
+z-index: 1;
+}
+
+.container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: .2fr .2fr .2fr .8fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "fichatecesp fichateceng espaciofotos espaciofotos"
+                       "descripciónesp descripciónesp espaciofotos espaciofotos"
+                       "descripcióneng descripcióneng espaciofotos espaciofotos";
+
+  grid-gap: .5rem;
+  MARGIN-LEFT: 2%;
+    MARGIN-RIGHT: 2%;
+
+}
+/* esta retícula es usada para dibujos, para verse mejor en pantalla grande*/
+ .container2{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "ñlñlk fichatecesp fichatecesp fichatecesp fichateceng fichateceng fichateceng jskjl"
+                       "skdhakjsd slkdalksd descripciónesp descripciónesp descripcióneng descripcióneng khasdkjas khasdkjas"
+                       "hdkash gfdfsf espaciofotos espaciofotos espaciofotos espaciofotos vcvsds lkasjdla";
+
+  grid-gap: .5rem;
+  MARGIN-LEFT: 2%;
+    MARGIN-RIGHT: 2%;
+
+}
+
+
+
+
+header{
+  background-color: pink;
+  grid-area: header
+
+}
+
+
+#headder{
+  background-color: #5c7eb1;
+  text-align: right;
+  grid-area: headerder;
+}
+
+
+#tituloproy{
+  background-color: transparent;
+  position: fixed;
+  grid-area: tituloproy;}
+
+#fichatecesp{
+  font-size: 10pt;
+  background-color: transparent;
+  text-align: left;
+  grid-area: fichatecesp;
+}
+#fichateceng{
+  font-size: 10pt;
+  background-color: transparent;
+  text-align: left;
+  color: grey;
+  grid-area: fichateceng;
+}
+
+#descripciónesp{
+	text-align: left;
+  font-family: IBM Plex serif, serif;
+  background-color: transparent;
+  grid-area: descripciónesp;
+color: darkslategray;}
+
+#descripcióneng{
+	text-align: left;
+  background-color: transparent;
+ font-family: IBM Plex serif, serif;
+  color: grey;
+  grid-area: descripcióneng;}
+
+#espaciofotos{
+  background-color: transparent;
+  grid-area: espaciofotos;
+  margin-right: 0px;
+  height: 100%;
+}
+#espaciofotos2{
+  color: pink;
+  background-color: transparent;
+  align-content: center;
+  grid-area: espaciofotos2;
+  margin-right: 0px;
+}
+  #contenidoadicional{
+  background-color: transparent;
+  grid-area: contenidoadicional;
+}
+
+#piedefoto{
+  color: black;
+	max-width: 90%;
+  margin-top: 0;
+  margin-bottom: 2.5%;
+  font-size: 10pt;
+}
+
+
+@media (max-width: 1550px){
+
+	img {
+		max-width: 100%;
+	  margin: auto;
+	  display: block;
+	}
+
+
+	#fichatecesp{
+	max-width: 90%;
+	}
+	#fichateceng{
+	  max-width: 90%;
+	}
+
+  #descripciónesp{
+  padding-right: 3%;}
+
+#descripcióneng{
+  padding-left: 3%;}
+
+  .container{
+    display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " fichatecesp fichatecesp fichateceng fichateceng"
+                       " descripciónesp descripciónesp descripcióneng descripcióneng"
+                       "espaciofotos espaciofotos espaciofotos espaciofotos";
+
+  grid-gap: .5rem;
+  }
+
+  body {
+  font-size: 12pt;
+}
+
+.container2{
+	display:grid;
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: " fichatecesp fichatecesp fichateceng fichateceng"
+										 "espaciofotos espaciofotos espaciofotos espaciofotos"
+										 " descripciónesp descripciónesp descripcióneng descripcióneng";
+
+grid-gap: .5rem;
+}
+
+
+
+@media (max-width: 720px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                      "fichatecesp fichateceng"
+                      "espaciofotos espaciofotos"
+                      "descripciónesp descripciónesp"
+                      "descripcióneng descripcióneng";
+  }
+
+  #headervolador{color: midnightblue;
+  text-align: right;
+  font-weight: bold;
+  width: 97.5%;
+  position: fixed;
+  top: 0%;
+}
+
+
+
+#rastrerovolador2{
+text-align: right;
+  font-weight: bold;
+  width: 97%;
+  position: fixed;
+  top: 95%;
+}
+
+body {
+  font-size: 10pt;
+  overflow: auto;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: IBM Plex Mono, sans-serif;
+  font-style: normal;
+  /*background-image: url("MIR-telaraña.jpg");*/
+ background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: white;
+
+}
+
+#descripcióneng{
+	padding-bottom: 7%;}
+
+  #headervolador{
+  text-align: right;
+  font-weight: bold;
+  width: 97.5%;
+  position: fixed;
+  top: 0%;
+}
+
+#rastrerovolador{
+text-align: right;
+  width: 97%;
+  position: fixed;
+  top: 7%;
+  padding-right: 3%;
+}
+
+#rastrerovolador2{color: midnightblue;
+text-align: right;
+  font-weight: bold;
+  width: 97%;
+  position: fixed;
+  top: 95%;
+}
+
+body {
+  font-size: 12pt;
+  overflow: auto;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: IBM Plex Mono, sans-serif;
+  font-style: normal;
+  /*background-image: url("MIR-telaraña.jpg");*/
+ background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: white;
+}
+
+#descripciónesp{
+  padding-right: 0%;}
+
+#descripcióneng{
+  padding-left: 0%;}
+}
