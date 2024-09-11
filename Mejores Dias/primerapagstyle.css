@@ -1,0 +1,259 @@
+*{ /* la estrella es un atributo
+	override cualquier cosa en el documento.
+	lo que esté referenciado a esta estrella será
+	a todos los elementos del html.*/
+	box-sizing: border-box;
+}
+
+/* links*/
+
+a{
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+	color:white;
+  /*background-color: yellow;*/
+  text-decoration-line: line-through;
+}
+
+a:active {
+  color: salmon;}
+
+
+p {margin: 10px;
+}
+
+/* cuerpo*/
+
+body {
+	font-size: 28pt;
+	overflow: auto;
+	text-align: left;
+	font-family: sans-serif;
+	font-style: normal;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: black;
+/*animation: myfirst 20s infinite;*/
+color: white;
+z-index: 0;
+}
+
+button {padding: 0;
+border: none;
+background: none;
+text-decoration: underline;
+font-weight: bold;
+z-index: 1;}
+
+/* Style del botón que abre y cierra el colapsado*/
+.collapsible {
+  background-color: transparent;
+  color: peachpuff;
+  cursor: help;
+  padding: 18px;
+  text-align: left;
+  font-size: 36px;
+  top: 3%;
+  left: 3%;
+  transform: translateX(-5%);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;}
+
+
+* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: blue;}
+
+
+/* Style del menú colapsado. Nota: configurado par no estár desplegado siempre */
+/* diferentes configuraciones del colapsado para jugar ocn el color de fondo del background */
+.content0 {
+  width: 450px;
+  font-size: 22pt;
+  text-align: center;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  overflow: hidden;
+  padding: 18px;
+  background-color: black;
+  opacity: 80%;
+  color: blanchedalmond;
+  z-index: 2;
+}
+
+#al
+{transform: rotate(-90deg);font-size: 48pt; padding-left: 100px;}
+#final
+{transform: rotate(-45deg);font-size: 48pt;}
+#del
+{transform: rotate(175deg);font-size: 48pt;}
+#mundo
+{font-size: 48pt;}
+
+.container{
+ margin-right: 7%;
+ margin-top: 0%;
+ margin-left: 10%;
+ margin-bottom: 40%;
+}
+
+#statement{
+	text-align: right;
+	font-size: 14pt;
+	padding: 13px;
+	margin-bottom: 20%;
+	position: absolute;
+	width: 500px;
+	top: 33%;
+  left: 90%;
+  transform: translateX(-90%);
+  color: blanchedalmond;
+}
+
+ @keyframes myfirst {
+  0%   {background-color:black;}
+  25%   {background-color:indianred;}
+  50% {background-color:darkred;}
+  75%   {background-color:seagreen;}
+  100%   {background-color:black;}
+}
+
+
+
+@media (max-width: 800px){
+
+	#statement{
+		text-align: center;
+	font-size: 28pt;
+	padding: 13px;
+	margin-bottom: 20%;
+	position: absolute;
+	width: 90%;
+	  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: blanchedalmond;
+}
+
+	.container{
+ margin-top: 7%;
+}
+
+body {
+	font-size: 28pt;
+	overflow: auto;
+	text-align: left;
+	font-family: sans-serif;
+	font-style: normal;
+	/*background-image: url("MIR-telaraña.jpg");*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: black;
+}
+
+#al
+{transform: rotate(-90deg);font-size: 30pt; padding-left: 100px;}
+#final
+{transform: rotate(-45deg);font-size: 30pt;}
+#del
+{transform: rotate(180deg);font-size: 30pt;}
+#mundo
+{font-size: 30pt;}
+
+.collapsible {
+  background-color: transparent;
+  color: peachpuff;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  top: 3%;
+  left: 5%;
+  transform: translateX(-1%);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;}
+
+ }
+
+ @media (max-width: 500px){
+
+ 	#statement{
+	font-size: 22pt;
+	padding: 13px;
+	position: absolute;
+	width: 80%;
+	  top: 37%;
+  left: 48%;
+  transform: translateX(-51%);
+  background-color: ;
+  color: blanchedalmond;
+}
+
+	.container{
+ margin-top: 23%;
+}
+
+body {
+	font-size: 12pt;
+	overflow: auto;
+	text-align: left;
+	font-family: sans-serif;
+	font-style: normal;
+	/*background-image: url("MIR-telaraña.jpg");*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-color: black;
+color: white;}
+
+#al
+{transform: rotate(-90deg);font-size: 30pt; padding-left: 100px;}
+#final
+{transform: rotate(-45deg);font-size: 30pt;}
+#del
+{transform: rotate(180deg);font-size: 30pt;}
+#mundo
+{font-size: 30pt;}
+
+  }
+
+@media (max-width: 400px){
+
+  #statement{
+  font-size: 22pt;
+  padding: 13px;
+  position: absolute;
+  width: 80%;
+    top: 57%;
+  left: 48%;
+  transform: translateX(-51%);
+  background-color: ;
+  color: blanchedalmond;
+}
+
+  .container{
+ margin-top: 30%;
+}
+
+
+#al
+{transform: rotate(-90deg);font-size: 30pt; padding-left: 100px;}
+#final
+{transform: rotate(-45deg);font-size: 30pt;}
+#del
+{transform: rotate(180deg);font-size: 30pt;}
+#mundo
+{font-size: 30pt;}
+
+  }

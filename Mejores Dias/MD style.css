@@ -1,0 +1,178 @@
+*{ /* la estrella es un atributo 
+	override cualquier cosa en el documento.
+	lo que esté referenciado a esta estrella será
+	a todos los elementos del html.*/
+	box-sizing: border-box; 
+}
+
+/* links*/
+
+a{
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+	color:peachpuff;
+  /*background-color: yellow;*/
+  text-decoration-line: line-through;
+}
+
+a:active {
+  color: salmon;}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {margin: 10px;
+
+
+  
+}
+
+/* cuerpo*/
+
+body {
+	font-size: 12pt;
+	overflow: auto;
+	text-align: left;
+	font-family: sans-serif;
+	font-style: normal;
+  /*background-image: url("súperfondof.jpg");*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: dimgrey;
+  animation: myfirst 20s infinite;
+  color: white;
+}
+
+.container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows:  0.2fr 0.5fr 1fr 0.2fr; 
+  grid-template-areas:
+                       "headerizq headerizq headerizq headerder headerder headerder"
+                       "main main main main main main"
+                       "lkjdlk contenido0 contenido1 contenido2 contenido3 jdlkasjkld"
+                       "pataizq pataizq pataizq patader patader patader";
+  grid-gap: .5rem;
+ 
+}
+
+header{
+  background-color: pink;
+  grid-area: header
+
+}
+
+#headervolador{color: blue;
+  font-size: 24pt;
+  text-align: right;
+  font-weight: bold;
+  width: 98%;
+  position: fixed;
+  z-index: 0;
+}
+
+
+#headerrovoladorizq{color: blue;
+font-size: 18pt;  
+text-align: left;
+font-weight: bold;
+width: 10%;
+position: fixed;
+margin-bottom: 25px;
+z-index: 2;
+}
+
+
+#headizq{
+
+  background-color: transparent;
+  grid-area: headerizq;
+}
+
+#headder{
+  background-color: transparent; 
+  text-align: right;
+  grid-area: headerder;
+  
+}
+
+main{
+  background-color: transparent;
+  grid-area: main;
+}
+
+#contenido0{
+  background-color: transparent;
+  grid-area: contenido0;}
+
+#contenido1{
+  background-color: transparent;
+  grid-area: contenido1;}
+
+#contenido2{
+  background-color: transparent;
+  grid-area: contenido2;}
+
+#contenido3{
+  background-color: transparent;
+  grid-area: contenido3;}
+
+#pataizq{
+  background-color: transparent;
+  grid-area: pataizq;}
+
+ #patader{
+  background-color: transparent;
+  grid-area: patader;
+  text-align: right;}
+
+ 
+ 
+
+
+@media (max-width: 1000px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas: 
+                         "headerizq headerder"
+                         "main main"
+                         "contenido1 contenido1"
+                         "contenido0 contenido0"
+                         "contenido2 contenido2"
+                         "contenido3 contenido3"
+                         "pataizq patader";
+  }
+
+  #headervolador{color: blue;
+  font-size: 14pt;
+  text-align: right;
+  font-weight: bold;
+  width: 98%;
+  position: fixed;
+  z-index: 0;
+}
+
+
+#headerrovoladorizq{color: blue;
+font-size: 14pt;  
+text-align: left;
+font-weight: bold;
+width: 10%;
+position: fixed;
+margin-bottom: 25px;
+z-index: 2;
+}
+
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="primerapagstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+
+  <title>DISEÑO INTUITIVO</title>
+  <link rel="icon" type="image/png" img href="imagenesmd/MDfavicon.png">
+</head>
+
+<body">
+  <!--Botón cascada-->
+  <button type="button" class="collapsible">M</button>
+  <div class="content0">
+    <p><a href="indice proyectosmd.html"><b>Proyectos / <font style="color:azure;">Projects</b></font></a></p>
+    <br>
+    <p><a href="primerapag.html"><b>Acerca de / <font style="color:azure;">About</b></font></a><br></p>
+  </div>
+  <!--Botón cascada-->
+
+  <!--comienzo contenido principal--->
+  <div class="container">
+    <div>
+      <p id="al">ARTES </p>
+      <p id="final">INTUITIVAS</p>
+      <p id="del">MEJORES</p>
+      <p id="mundo">DÍAS</p>
+    </div>
+    <b>
+      <p id="statement">Este sitio compila <a href="indice proyectosmd.html">proyectos</a> de diseño hechos por <a target="_blank" href="http://josesanin.com/">José Sanín</a> y diferentes amigues.<br><br>Ofrecemos servicios en dirección de arte, producción y diseño intuitivo para
+        artes gráficas, objetos y espacios compartidos.<br><br>Contacto: saninjose90@gmail.com<br>tel:+57 1 3006514528<br><br></font><br>
+
+
+
+        <font style="color:azure;"> This site gathers design projects done by <a target="_blank" href="http://josesanin.com/">José Sanín</a> and various friends.<br><br>We offer services in art direction, production and intuitive design for graphic arts, objects and shared spaces.<i><br><br>Inquiries: saninjose90@gmail.com<br>tel:+57 1 3006514528<br><br>
+        </font>
+      </p>
+    </b>
+  </div>
+
+
+  <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+  </body>
+
+</html>
