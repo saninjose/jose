@@ -220,6 +220,10 @@ transform: translateX(-93%);
 position: fixed;
 }
 
+.nombre{
+text-align: left;
+width: 90%;}
+
 /* Fin estilos globales que cobijan todas las secciones*/
 
 
