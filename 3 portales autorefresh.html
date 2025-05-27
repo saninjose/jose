@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>imagen aleatoria</title>
+    <link rel="stylesheet" href="3 styleautorefresh.css">
+  </head>
+  <body>
+    <div class="expli"><h1>Ingreso / enter</h1></div>
+    <div class="page-header-actions" data-toggle="buttons" role="group">
+  <label class="btn btn-outline btn-primary active">
+    <input type="radio" name="options" autocomplete="off" value="autorefreshoff" />
+    <i class="icon wb-check text-active" aria-hidden="true"></i> QUIETO
+  </label>
+  <label onClick="startrefreshon" class="btn btn-outline btn-primary">
+    <input id="auto-refresh-checkbox" type="radio" name="options" autocomplete="off" value="autorefreshon" checked />
+    <i class="icon wb-check text-active" aria-hidden="true"></i> ANDANDO
+  </label>
+</div>
+    <div class='figura'>
+         <img src='' id="cabezaImg">
+          <img src='' id="ojosImg"> 
+          <img src='' id="narizImg"> 
+          <img src='' id="bocaImg"> 
+    </div>
+
+      
+
+    <script src="3 javaautorefresh.js"></script>
+    <script>setInterval(reloadPage, 900);</script>
+  </body>
+</html>
