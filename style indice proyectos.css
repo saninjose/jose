@@ -8,7 +8,7 @@ body{
   line-height: 1.5;
   font-family: IBM Plex Mono, sans-serif;
   font-style: normal;
-background-color: yellow;
+background-color: palegoldenrod;
 }
 
 
@@ -130,7 +130,7 @@ color: blue;}
   border-radius: none;
   display: none;
   overflow: hidden;
-  height: 110%;
+  height: 150%;
 }
 
 .filterItems > img{

@@ -138,7 +138,7 @@ width: 99%;
 position: fixed;
 margin-bottom: 25px;
 padding-right: 1%;
-top: 94%;
+top: 92%;
 z-index: 0;
 }
 
@@ -148,7 +148,7 @@ font-weight: bold;
 width: 90%;
 position: fixed;
 margin-bottom: 25px;
-top: 95%;
+top: 93%;
 z-index: 1;
 }
 
@@ -205,6 +205,7 @@ header{
   grid-area: tituloproy;}
 
 #fichatecesp{
+  margin-left: -2%;
   font-size: 10pt;
   background-color: transparent;
   text-align: left;
@@ -370,7 +371,7 @@ background-color: white;
 text-align: right;
   width: 97%;
   position: fixed;
-  top: 7%;
+  top: 4%;
   padding-right: 3%;
 }
 
@@ -379,7 +380,7 @@ text-align: right;
   font-weight: bold;
   width: 97%;
   position: fixed;
-  top: 95%;
+  top: 93%;
 }
 
 body {
