@@ -200,8 +200,9 @@ header{
 
 
 #tituloproy{
-  background-color: transparent;
   position: fixed;
+  text-align: left;
+  max-width: 250px;
   grid-area: tituloproy;}
 
 #fichatecesp{
