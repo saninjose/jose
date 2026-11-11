@@ -130,7 +130,7 @@ color: blue;}
   border-radius: none;
   display: none;
   overflow: hidden;
-  height: 150%;
+  height: 100%;
 }
 
 .filterItems > img{
@@ -152,7 +152,7 @@ color: blue;}
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
 
-#infoproy {height: 70px;}
+#infoproy {height: 105px;}
 
 /* Fin estilo para índice artes*/
 
@@ -200,7 +200,7 @@ color: midnightblue;
 text-align: right;
 width: 91%;
 position: fixed;
-z-index: 1;
+z-index: 99;
 }
 
 #headervolador2{
